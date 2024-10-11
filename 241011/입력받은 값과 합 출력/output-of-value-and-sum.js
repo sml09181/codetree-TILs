@@ -1,3 +1,4 @@
 const fs = require("fs");
-let a, b = Numbers(fs.readFileSync(0).toString().split(" "));
+let input = Numbers(fs.readFileSync(0).toString().trim().split(" "));
+const [a, b] = input;
 console.log("%d %d %d", a, b, a+b);

@@ -1,1 +1,1 @@
-alert("World");
+console.log("World");

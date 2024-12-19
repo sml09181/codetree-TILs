@@ -38,8 +38,8 @@ int main() {
     int** arr = new int*[n];
     for (int i=0; i<n; i++) {
         arr[i] = new int[n];
-        fill_n(arr[i], n, 0);
-        for (int j=0; j<n; j++) 
+        fill_n(arr[i], m, 0);
+        for (int j=0; j<m; j++) 
             cin >> arr[i][j];
     }
 

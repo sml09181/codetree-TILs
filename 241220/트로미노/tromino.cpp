@@ -13,7 +13,7 @@ int getMax_tri_block(int** arr, int r, int c, int n, int m) {
         temp += arr[r][c]>arr[r+1][c+1]?arr[r][c]:arr[r+1][c+1];
         if (temp > max) max = temp;
     }
-    return max
+    return max;
 }
 
 int getMax_long_block(int** arr, int r, int c, int n, int m) {
@@ -28,7 +28,7 @@ int getMax_long_block(int** arr, int r, int c, int n, int m) {
         temp = arr[r][c]+arr[r+1][c]+arr[r+1][c+1];
         if (temp > max) max = temp;
     }
-    return max
+    return max;
 }
 
 int main() {
@@ -44,8 +44,8 @@ int main() {
     }
 
     for (int i=0; i<n; i++) {
-        for (int j=0; j<n; j++) {
-            int temp = max(getMax_long_block(arr, i, j, n, m), getMax_tri_block(arr, i, j, n, m))
+        for (int j=0; j<m; j++) {
+            int temp = max(getMax_long_block(arr, i, j, n, m), getMax_tri_block(arr, i, j, n, m));
             if (temp > ans) ans = temp;
         }
     }

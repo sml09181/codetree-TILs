@@ -34,13 +34,13 @@ int getMax_long_block(int** arr, int r, int c, int n, int m) {
 int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    
+
     int n, m, ans=-1;
     cin >> n >> m;
 
     int** arr = new int*[n];
     for (int i=0; i<n; i++) {
-        arr[i] = new int[n];
+        arr[i] = new int[m];
         fill_n(arr[i], m, 0);
         for (int j=0; j<m; j++) 
             cin >> arr[i][j];

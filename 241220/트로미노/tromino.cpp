@@ -9,7 +9,7 @@ int getMax_tri_block(int** arr, int r, int c, int n, int m) {
         temp += arr[r+1][c]>arr[r][c+1]?arr[r+1][c]:arr[r][c+1];
         if (temp > max) max = temp;
 
-        temp = arr[r+1][c]+arr[r+1][c];
+        temp = arr[r+1][c]+arr[r][c+1];
         temp += arr[r][c]>arr[r+1][c+1]?arr[r][c]:arr[r+1][c+1];
         if (temp > max) max = temp;
     }

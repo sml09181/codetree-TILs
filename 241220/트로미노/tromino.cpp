@@ -24,7 +24,7 @@ int getMax_long_block(int** arr, int r, int c, int n, int m) {
         if (temp > max) max = temp;
     }
     // 세로로 긴
-    else if (r <= n-3 && c < m) {
+    if (r <= n-3 && c < m) {
         temp = arr[r][c]+arr[r+1][c]+arr[r+2][c];
         if (temp > max) max = temp;
     }
